@@ -6,14 +6,20 @@ import { routeConfig } from "shared/routeConfig/routeconfig";
 
 export const AppRouter = () => {
   return (
-    <div>
-      <Suspense fallback={<div>Загрузка</div>}>
-        <Routes>
-          {Object.values(routeConfig).map(({element, path}) => (
-            <Route key={path} path={path} element={element} />
-          ))}
-        </Routes>
-      </Suspense>
-    </div>
+    <Suspense fallback={<div>Загрузка</div>}>
+      <Routes>
+        {Object.values(routeConfig).map(({ element, path }) => (
+          <Route
+            key={path}
+            path={path}
+            element={
+              <Suspense fallback={<div>Загрузка</div>}>
+                <div className='page-wrapper'>{element}</div>
+              </Suspense>
+            }
+          />
+        ))}
+      </Routes>
+    </Suspense>
   );
 };
