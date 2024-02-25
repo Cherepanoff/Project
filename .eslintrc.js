@@ -9,17 +9,17 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:i18next/recommended",
   ],
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: [".eslintrc.{js,cjs}"],
-      parserOptions: {
-        sourceType: "script",
-      },
-    },
-  ],
+  // overrides: [
+  //   {
+  //     env: {
+  //       node: true,
+  //     },
+  //     files: [".eslintrc.{js,cjs}"],
+  //     parserOptions: {
+  //       sourceType: "script",
+  //     },
+  //   },
+  // ],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -55,4 +55,12 @@ module.exports = {
   globals: {
     __IS_DEV__: true,
   },
+  overrides : [
+    {
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      },
+    },
+  ]
 };
