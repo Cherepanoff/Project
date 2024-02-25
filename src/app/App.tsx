@@ -9,15 +9,15 @@ import { type FC, Suspense } from 'react'
 const App: FC = () => {
   const { theme } = useTheme()
   return (
-      <div className={classNames('app', {}, [theme])}>
-            <Suspense fallback=''>
-              <Navbar />
-              <div className='content-page'>
-                    <SideBar />
-                    <AppRouter />
-                </div>
-          </Suspense>
-        </div>
+		<div className={classNames('app', {}, [theme])}>
+			<Suspense fallback=''>
+				<Navbar />
+				<div className='content-page'>
+					<SideBar />
+					<AppRouter />
+				</div>
+			</Suspense>
+		</div>
   )
 }
 

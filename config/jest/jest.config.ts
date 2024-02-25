@@ -24,7 +24,6 @@ const config: Config = {
   testMatch: [
     '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
   ]
-  //sdpuigbhsdghsdog;hsdgsd;oihgsdiohgsdsdpuigbhsdghsdog;hsdgsd;oihgsdiohgsdsdpuigbhsdghsdog;hsdgsd;oihgsdiohgsdsdpuigbhsdghsdog;hsdgsd;oihgsdiohgsdsdpuigbhsdghsdog;hsdgsd;oihgsdiohgsdsdpuigbhsdghsdog;hsdgsd;oihgsdiohgsdsdpuigbhsdghsdog;hsdgsd;oihgsdiohgsd
 }
 
 export default config
