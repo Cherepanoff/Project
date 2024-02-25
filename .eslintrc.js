@@ -2,8 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true
   },
-  extends: ["standard-with-typescript", "plugin:react/recommended"],
+  extends: ["standard-with-typescript", "plugin:react/recommended", "plugin:i18next/recommended"],
   overrides: [
     {
       env: {
@@ -19,7 +20,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react","i18next","@typescript-eslint"],
   rules: {
     "@typescript-eslint/no-misused-promises": [
       "error",
@@ -31,6 +32,7 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': "off",
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
+    'no-unused-vars': 'error',
     'import/prefer-default-export': 'off',
     'react/require-default-props': 'off',
     'react/react-in-jsx-scope': 'off',
