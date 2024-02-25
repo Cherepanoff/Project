@@ -1,15 +1,14 @@
-declare module "*.scss" {
-  interface IClassNames {
-    [className: string]: string;
-  }
-  const classNames: IClassNames;
-  export = classNames;
+declare module '*.scss' {
+  type IClassNames = Record<string, string>
+  const classNames: IClassNames
+  export = classNames
 }
-declare module "*.svg" {
-  const content: React.VFC<React.SVGProps<SVGSVGElement>>;
-  export default content;
+declare module '*.svg' {
+  const content: React.VFC<React.SVGProps<SVGSVGElement>>
+  export default content
 }
-declare module "*.png";
-declare module "*.jpg";
+declare module '*.png';
+declare module '*.jpg';
 
-declare const __IS_DEV__: boolean;
+// eslint-disable-next-line @typescript-eslint/naming-convention
+declare const __IS_DEV__: boolean
