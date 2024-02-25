@@ -4,7 +4,7 @@ import { classNames } from 'shared/helpers/classNames/classNames'
 import { AppRouter } from './providers/router'
 import { Navbar } from 'widgets/Navbar'
 import { SideBar } from 'widgets/SideBar'
-import { type FC, Suspense } from 'react'
+import { type FC, Suspense, useEffect } from 'react'
 
 const App: FC = () => {
   const { theme } = useTheme()
