@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/react'
 import { StyleDecorator } from 'shared/storybook/StyleDecorator/StyleDecorator'
 import '../../src/app/styles/index.scss'
+import { RouterDecorator } from 'shared/storybook/RouterDecorator/RouterDecorator'
 
 const preview: Preview = {
   parameters: {
@@ -11,16 +12,9 @@ const preview: Preview = {
         date: /Date$/i
       }
     }
-    // themes: {
-    //   default: 'light',
-    //   list: [
-    //     { name: 'light' },
-    //     { name: 'dark', class: 'app.dark' }
-    //   ]
-    // }
   },
   decorators: [
-    StyleDecorator
+    StyleDecorator, RouterDecorator
   ]
 
 }
