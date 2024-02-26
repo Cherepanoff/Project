@@ -36,7 +36,7 @@ export function buildLoaders ({ isDev }: BuildOptions): webpack.RuleSetRule[] {
       }
     }
   }
-  const cssLoader = buildCssLoader(isDev);
+  const cssLoader = buildCssLoader(isDev)
 
   return [fileLoader, svgLoader, babelLoader, typescriptLoader, cssLoader]
 }
