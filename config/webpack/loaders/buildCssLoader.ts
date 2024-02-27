@@ -1,6 +1,6 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
-export default function cssLoader (isDev: boolean) {
+export default function cssLoader (isDev: boolean): { test: RegExp, use: Array<string | { loader: string, options: { modules: { auto: (resPath: string) => boolean, localIdentName: string } } }> } {
   return {
     test: /\.s[ac]ss$/i,
     use: [
