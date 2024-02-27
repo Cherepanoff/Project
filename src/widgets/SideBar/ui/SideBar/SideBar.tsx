@@ -7,7 +7,7 @@ interface SideBarProps {
   className?: string
 }
 export const SideBar: FC<SideBarProps> = ({ className }) => {
-  const [collapsed, setCollapsed] = useState(true)
+  const [collapsed, setCollapsed] = useState(false)
   const onToggle = (): void => {
     setCollapsed((prev) => !prev)
   }
