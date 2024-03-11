@@ -16,3 +16,15 @@
   color: var(--primary-color);
 
 }
+.background {
+  background: var(--bg-color);
+  padding: 10px 15px;
+  border: none;
+  color: var(--primary-color);
+}
+.backgroundInverted {
+  border: none;
+  padding: 10px 15px;
+  color: var(--inverted-primary-color);
+  background: var(--inverted-bg-color);
+}

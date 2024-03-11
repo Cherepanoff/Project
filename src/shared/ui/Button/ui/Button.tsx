@@ -4,11 +4,20 @@ import { type ButtonHTMLAttributes, type FC } from 'react'
 
 export enum ThemeButton {
   CLEAR = 'clear',
-  OUTLINE = 'outline'
+  OUTLINE = 'outline',
+  BACKGROUND = 'background',
+  BACKGROUND_INVERTED = 'backgroundInverted'
+}
+export enum ButtonSize {
+  M = 'size_m',
+  L = 'size_l',
+  XL = 'size_xl'
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ThemeButton
   className?: string
+  square?: boolean
+  size?: ButtonSize
   children?: React.ReactNode
 }
 export const Button: FC<ButtonProps> = ({
