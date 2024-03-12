@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button, ThemeButton } from './Button'
+import { Button, ButtonSize, ThemeButton } from './Button'
 import { ThemeDecorator } from 'shared/storybook/ThemeDecorator/ThemeDecorator'
 
 const meta = {
@@ -36,10 +36,50 @@ export const Outline: Story = {
     theme: ThemeButton.OUTLINE
   }
 }
-export const OutlineDark: Story = {
+export const OutlineM: Story = {
   args: {
     children: 'Button',
-    theme: ThemeButton.OUTLINE
-  },
-  decorators: [ThemeDecorator]
+    theme: ThemeButton.OUTLINE,
+    size: ButtonSize.M
+
+  }
 }
+export const OutlineL: Story = {
+  args: {
+    children: 'Button',
+    theme: ThemeButton.OUTLINE,
+    size: ButtonSize.L
+  }
+}
+export const OutlineXL: Story = {
+  args: {
+    children: 'Button',
+    theme: ThemeButton.OUTLINE,
+    size: ButtonSize.XL
+  }
+}
+export const SquareM: Story = {
+  args: {
+    children: '1',
+    square: true,
+    size: ButtonSize.M
+
+  },
+}
+export const SquareL: Story = {
+  args: {
+    children: '1',
+    square: true,
+    size: ButtonSize.L
+
+  },
+}
+export const SquareXL: Story = {
+  args: {
+    children: '1',
+    square: true,
+    size: ButtonSize.XL
+
+  },
+}
+

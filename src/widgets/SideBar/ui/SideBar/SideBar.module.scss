@@ -21,9 +21,16 @@
 }
 .collapsedBtn {
   position: absolute;
-  bottom: -40px;
-  right: 40px;
+  bottom: 20px;
+  right: -20px;
 }
-.square {
-  
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  margin-top: 10px;
+
 }
