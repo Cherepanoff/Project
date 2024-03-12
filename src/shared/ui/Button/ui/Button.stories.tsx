@@ -64,7 +64,7 @@ export const SquareM: Story = {
     square: true,
     size: ButtonSize.M
 
-  },
+  }
 }
 export const SquareL: Story = {
   args: {
@@ -72,7 +72,7 @@ export const SquareL: Story = {
     square: true,
     size: ButtonSize.L
 
-  },
+  }
 }
 export const SquareXL: Story = {
   args: {
@@ -80,6 +80,5 @@ export const SquareXL: Story = {
     square: true,
     size: ButtonSize.XL
 
-  },
+  }
 }
-
