@@ -25,7 +25,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "i18next", "@typescript-eslint"],
+  plugins: ["react", "i18next", "@typescript-eslint","react-hooks"],
   rules: {
     "@typescript-eslint/no-misused-promises": [
       "error",
@@ -51,6 +51,8 @@ module.exports = {
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
     "no-tabs": ["error", { allowIndentationTabs: true }],
   },
   globals: {

@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom'
 export interface renderWithRouterOptions {
   route: string
 }
-export function renderWithRouter (component: ReactNode, options: renderWithRouterOptions){
+export function renderWithRouter (component: ReactNode, options: renderWithRouterOptions) {
   const {
     route
   } = options
