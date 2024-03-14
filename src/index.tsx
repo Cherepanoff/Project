@@ -5,11 +5,13 @@ import ThemeProvider from 'app/providers/ThemeProvider/ui/ThemeProvider'
 import 'app/styles/index.scss'
 import 'shared/i18nconfig/i18n'
 import { ErrorBoundary } from 'app/providers/ErrorBoundary'
+import { StoreProvider } from 'app/providers/StoreProviders'
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 
 root.render(
+	<StoreProvider>
 	<BrowserRouter>
 		<ErrorBoundary>
 		<ThemeProvider>
@@ -17,4 +19,5 @@ root.render(
 		</ThemeProvider>
 		</ErrorBoundary>
 	</BrowserRouter>
+	</StoreProvider>
 )
